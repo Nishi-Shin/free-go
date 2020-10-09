@@ -32,6 +32,19 @@
                   <div class="title"><%=link_to post.user.username, user_path(post.user) %></div>
                 </div>
               </div>
+              
+                <div class="content">
+                  <% if current_user.already_liked?(post) %>
+                    <%= link_to post_likes_path(post), method: :delete do %>
+                      <i class="fas fa-heart"></i>
+                    <% end %>
+                  <% else %>
+                    <%= link_to post_likes_path(post), method: :post do %>
+                      <i class="far fa-heart"></i>
+                    <% end %>
+                  <% end %>
+                  <%= post.likes.count %>
+                </div>
 
               <div class="content">
                 <time><%= post.updated_at.strftime("%Y-%m-%d %H:%M") %></time>更新

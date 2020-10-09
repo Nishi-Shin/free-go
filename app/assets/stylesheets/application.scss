@@ -14,7 +14,9 @@
  *= require_self
  */
 
- @import "bulma";
+@import "bulma";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
  .notification:not(:last-child){
 	margin-bottom: 0;
@@ -29,4 +31,8 @@
   background-image: url(Barrier-free.jpg);
   background-repeat: none;
   background-size: contain;
+}
+
+* {
+  box-sizing: border-box;
 }

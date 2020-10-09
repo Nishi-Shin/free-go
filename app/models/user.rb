@@ -7,5 +7,10 @@ class User < ApplicationRecord
   has_many :posts, dependent: :destroy
 
   validates :username, presence: true
+  has_many :likes, dependent: :destroy
+
+  def already_liked?(post)
+    self.likes.exists?(post_id: post.id)
+  end
 
 end
