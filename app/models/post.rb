@@ -9,4 +9,9 @@ class Post < ApplicationRecord
     validates :image
   end
 
+  def self.search(search)
+    return Post.all unless search
+    Post.where('body LIKE(?)', "%#{search}%")
+  end
+
 end

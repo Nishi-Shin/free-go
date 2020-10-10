@@ -68,3 +68,5 @@ gem "refile-mini_magick"
 gem "bulma-rails"
 
 gem 'font-awesome-sass'
+
+gem 'kaminari'

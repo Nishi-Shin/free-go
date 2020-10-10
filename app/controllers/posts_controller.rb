@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user! , except: [:index]
 
   def index
-    @posts = Post.all
+    @posts = Post.order("created_at DESC").page(params[:page]).per(6)
   end
 
   def show
@@ -29,6 +29,10 @@ class PostsController < ApplicationController
     if @post.user != current_user
       redirect_to posts_path, alert: 'アクセス制限です！'
     end
+  end
+
+  def search
+    @posts = Post.search(params[:keyword])
   end
 
   def update
