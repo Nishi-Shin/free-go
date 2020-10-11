@@ -26,13 +26,6 @@
   border-radius: 50%;
 }
 
-.main-image {
-  height: 940px;
-  background-image: url(Barrier-free.jpg);
-  background-repeat: none;
-  background-size: contain;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -81,4 +74,8 @@
 
 .button.is-warning.is-fullwidth {
   background-color: silver;
+}
+
+.columns.is-centered {
+  margin-bottom: 1rem;
 }
