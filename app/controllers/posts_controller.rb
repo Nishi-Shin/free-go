@@ -45,9 +45,9 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    post = Posr.find(params[:id])
-    @post.destroy
-    redirect_to posts_path
+    post = Post.find(params[:id])
+    post.destroy
+    redirect_to user_path(post.user), notice: "レシピを削除しました。"
   end
 
   private

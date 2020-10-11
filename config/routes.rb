@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :users
 
+
   resources :posts do
     get :search, on: :collection
     resource :likes, only: [:create, :destroy]
