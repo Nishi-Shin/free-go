@@ -45,3 +45,40 @@
 .search-btn {
   height: 32px;
 }
+
+.section {
+  background-image: url("Barrier-free.jpg");
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;  
+  background-size: cover;
+  min-height: 100vh;
+ }
+
+.navbar.is-warning {
+  background-color: darkgray;
+}
+
+.title.is-4 {
+  background-color: darkgray;
+}
+
+.navbar-content{
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+.navbar-item.button.is-warning.is-light {
+  background-color: whitesmoke;
+}
+
+.button.is-warning.is-light {
+  background-color: whitesmoke;
+}
+
+.button.is-warning.is-fullwidth {
+  background-color: silver;
+}
