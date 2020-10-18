@@ -39,20 +39,29 @@
   height: 32px;
 }
 
-.section {
-  background-image: url("Barrier-free.jpg");
-  background-color:rgba(255,255,255,0.8);
+.background-image {
+  background-image: url("4247430468-wheelchair-749985_1920-L95g-1920x1280-MM-100.jpg");
+  background-color:rgba(255,255,255,0.1);
   background-blend-mode:lighten;  
   background-size: cover;
   min-height: 100vh;
  }
 
 .navbar.is-warning {
-  background-color: darkgray;
+  background-color: #222222;
 }
 
 .title.is-4 {
-  background-color: darkgray;
+  background-color: #222222;
+}
+
+.home-logo {
+  color: white;
+}
+
+.sab-title {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .navbar-content{
@@ -78,4 +87,55 @@
 
 .columns.is-centered {
   margin-bottom: 1rem;
+}
+
+
+
+
+a.btn--white {
+  color: black;
+  background-color: whitesmoke;
+  border-bottom: 5px solid #AAAAAA;
+}
+
+a.btn--white:hover {
+  margin-top: 3px;
+  color: #947600;
+  background:  fff20a;
+  border-bottom: 2px solid #AAAAAA;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #947600;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.btn--login {
+  margin-bottom: 15px;
+}
+
+.footer-logo{
+  color: white;
+  background-color:  #222222;
+  text-align: center;
 }

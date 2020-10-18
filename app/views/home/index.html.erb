@@ -1,9 +1,12 @@
-<section class="section">
+<section class="section background-image">
   <article class="media">
     <div class="media-content">
       <div class="content has-text-centered">
         <p>
-          <strong class="is-size-1" style="font-family: cursive;">Free-Go</strong>
+          <strong class="is-size-1 home-logo" style="font-family: cursive;">Free-Go</strong>
+        </p>
+        <p>
+          <strong class="sab-title" >〜あなたの意思で自由に駆け回ろう〜</strong>
         </p>
         <p>
           <%= form_with(url: search_posts_path, local: true, method: :get) do |form| %>
@@ -15,9 +18,9 @@
       <div class="columns is-centered">
         <div class="column is-5">
           <br>
-          <%= link_to "ログイン", new_user_session_path, class: "button is-warning is-fullwidth" %>
+          <%= link_to "ログイン", new_user_session_path, class: "btn btn--white btn--cubic btn--login" %>
           <br>
-          <%= link_to "新規登録", new_user_registration_path, class: "button is-warning is-fullwidth" %>
+          <%= link_to "新規登録", new_user_registration_path, class: "btn btn--white btn--cubic" %>
         </div>
       </div>
     </div>
@@ -31,3 +34,4 @@
     </div>
   </div>
 </section>
+  <div class="footer-logo">Copyright Free-Go 2020.</div>
