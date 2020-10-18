@@ -72,6 +72,9 @@
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
+                  <%= link_to 'ゲストログイン', users_guest_sign_in_path, class: "button is-warning is-fullwidth", method: :post %>
+                </p>
+                <p class="control">
                   <%= link_to "ログイン", new_user_session_path, class: "button is-warning is-light" %>
                 </p>
                 <p class="control">
