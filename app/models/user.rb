@@ -6,7 +6,7 @@ class User < ApplicationRecord
   attachment :profile_image
   has_many :posts, dependent: :destroy
 
-  validates :username, :email,:password, :password_confirmation, presence: true
+  validates :username, :email, :password,  presence: true
   
   has_many :likes, dependent: :destroy
 
@@ -14,5 +14,10 @@ class User < ApplicationRecord
     self.likes.exists?(post_id: post.id)
   end
 
+  def self.guest
+    find_or_create_by!(username: 'ゲスト', email: 'guest@example.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+    end
+  end
 
 end
