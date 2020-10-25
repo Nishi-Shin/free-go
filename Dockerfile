@@ -9,3 +9,5 @@ COPY Gemfile.lock /myapp/Gemfile.lock
 
 RUN bundle install
 COPY . /myapp
+
+RUN apt-get install -y vim

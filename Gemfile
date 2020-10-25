@@ -82,3 +82,7 @@ gem "bulma-rails"
 gem 'font-awesome-sass'
 
 gem 'kaminari'
+gem 'fog-aws'
+
+gem "refile-s3"
+gem 'dotenv-rails'
